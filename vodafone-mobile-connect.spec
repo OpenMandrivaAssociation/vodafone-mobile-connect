@@ -1,10 +1,10 @@
 %define realname vodafone-mobile-connect-card-driver-for-linux
 %define version 2.0
 %define pre beta3
-%define rel 3
+%define rel 4
 
 Summary: 	Vodafone Mobile Connect Card Driver (GUI) for Linux
-Name: 		vmc
+Name: 		vodafone-mobile-connect
 Version: 	%{version}
 Release:	%mkrel %{expand:%{?pre:0.%pre.}}%rel
 Source0: 	https://forge.vodafonebetavine.net/frs/download.php/57/%{realname}-%{version}%{?pre:.%pre}.tar.gz
@@ -15,8 +15,8 @@ Group: 		System/Configuration/Networking
 BuildArch:	noarch
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 URL:		https://forge.betavine.net/projects/vodafonemobilec/
-Provides:	%{realname} = %{version}-%{release}
-Obsoletes:	%{realname} < %{version}
+Provides:	%{realname} = %{version}-%{release} vmc
+Obsoletes:	%{realname} < %{version} vmc
 # < %{version}-{release}
 BuildRequires:	python-devel python-setuptools >= 0.6c5
 Requires:	python-twisted python-serial pygtk2.0-libglade 
