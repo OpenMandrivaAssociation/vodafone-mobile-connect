@@ -1,7 +1,7 @@
 %define realname vodafone-mobile-connect-card-driver-for-linux
 %define version 2.0
 %define pre beta3
-%define rel 4
+%define rel 5
 
 Summary: 	Vodafone Mobile Connect Card Driver (GUI) for Linux
 Name: 		vodafone-mobile-connect
