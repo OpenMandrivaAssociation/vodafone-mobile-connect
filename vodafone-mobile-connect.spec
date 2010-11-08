@@ -1,7 +1,7 @@
 %define realname vodafone-mobile-connect-card-driver-for-linux
 %define version 2.0
 %define pre beta3
-%define rel 5
+%define rel 6
 
 Summary: 	Vodafone Mobile Connect Card Driver (GUI) for Linux
 Name: 		vodafone-mobile-connect
@@ -54,7 +54,11 @@ python setup.py install --root=$RPM_BUILD_ROOT --record=INSTALLED_FILES
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f INSTALLED_FILES
+%files
 %defattr(-,root,root)
 %doc README
-
+%py_puresitedir/*
+%_bindir/*
+%_datadir/applications/*.desktop
+%_datadir/pixmaps/*.png
+%_datadir/vodafone-mobile-connect-card-driver-for-linux
