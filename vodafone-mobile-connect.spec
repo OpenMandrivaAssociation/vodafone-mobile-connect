@@ -62,3 +62,34 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/applications/*.desktop
 %_datadir/pixmaps/*.png
 %_datadir/vodafone-mobile-connect-card-driver-for-linux
+
+
+%changelog
+* Mon Nov 08 2010 Funda Wang <fwang@mandriva.org> 2.0-0.beta3.6mdv2011.0
++ Revision: 595036
+- rebuild for py 2.7
+
+  + Michael Scherer <misc@mandriva.org>
+    - rebuild for python 2.7
+
+* Sun Sep 20 2009 Thierry Vignaud <tv@mandriva.org> 2.0-0.beta3.4mdv2010.0
++ Revision: 445701
+- rebuild
+
+* Sat Sep 20 2008 Buchan Milne <bgmilne@mandriva.org> 2.0-0.beta3.3mdv2009.1
++ Revision: 286075
+- Rename vmc to vodafone-mobile-connect
+
+* Fri Aug 01 2008 Buchan Milne <bgmilne@mandriva.org> 2.0-0.beta3.3mdv2009.0
++ Revision: 259491
+- Require python-twisted-conch >= 0.8.0
+- Require gnome-python-extras
+
+* Fri Aug 01 2008 Buchan Milne <bgmilne@mandriva.org> 2.0-0.beta3.2mdv2009.0
++ Revision: 259445
+- Require gnome-python
+
+* Fri Aug 01 2008 Buchan Milne <bgmilne@mandriva.org> 2.0-0.beta3.1mdv2009.0
++ Revision: 259407
+- import vmc
+
