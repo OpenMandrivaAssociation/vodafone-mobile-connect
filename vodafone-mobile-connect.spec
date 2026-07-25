@@ -6,7 +6,7 @@
 Summary: 	Vodafone Mobile Connect Card Driver (GUI) for Linux
 Name: 		vodafone-mobile-connect
 Version: 	%{version}
-Release:	%mkrel %{expand:%{?pre:0.%pre.}}%rel
+Release:	%{expand:%{?pre:0.%pre.}}%rel.1
 Source0: 	https://forge.vodafonebetavine.net/frs/download.php/57/%{realname}-%{version}%{?pre:.%pre}.tar.gz
 Source1:	vmc-mandriva-plugin.py
 #Patch:		
